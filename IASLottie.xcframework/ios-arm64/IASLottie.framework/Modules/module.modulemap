@@ -1,0 +1,11 @@
+framework module IASLottie {
+  umbrella header "IASLottie.h"
+
+  export *
+  module * { export * }
+}
+
+module IASLottie.Swift {
+  header "IASLottie-Swift.h"
+  requires objc
+}
