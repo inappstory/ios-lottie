@@ -9,12 +9,12 @@ let package = Package(
         .iOS(.v12)
     ],
     products: [
-        .library(name: "IASLotiie", targets: ["IASLottie"])
+        .library(name: "IASLottie", targets: ["IASLottie"])
     ],
     targets: [
         .binaryTarget(
-            name: "IASLotiie",
-            path: "IASLotiie.xcframework"
+            name: "IASLottie",
+            path: "IASLottie.xcframework"
         )
     ],
     swiftLanguageVersions: [.v5]
