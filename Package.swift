@@ -9,13 +9,20 @@ let package = Package(
         .iOS(.v12)
     ],
     products: [
-        .library(name: "IASLottie", targets: ["IASLottie"])
+        .library(
+            name: "IASLottie",
+            targets: ["IASLottie"]
+        ),
+    ],
+    dependencies: [
+        .package(name: "Lottie", url: "https://github.com/airbnb/lottie-ios.git", from: "4.4.1"),
     ],
     targets: [
-        .binaryTarget(
+        .target(
             name: "IASLottie",
-            path: "IASLottie.xcframework"
+            dependencies: ["Lottie"],
+            path: "Sources",
+            publicHeadersPath: "include"
         )
-    ],
-    swiftLanguageVersions: [.v5]
+    ]
 )

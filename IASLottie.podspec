@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name = 'IASLottie'
-    s.version = '0.1.0'
+    s.version = '0.2.0'
     s.platform = :ios, '12.0'
     s.license  = { :type => 'MIT', :file => 'LICENSE' }
     s.homepage = 'https://github.com/inappstory/ios-lottie'
@@ -10,5 +10,7 @@ Pod::Spec.new do |s|
     s.summary = 'Library Connector, for connecting Lottie animations to games for InAppStorySDK'
     s.description = 'Library Connector, for connecting Lottie animations to games for InAppStorySDK'
 
-    s.vendored_frameworks = "IASLottie.xcframework"
+    s.dependency 'lottie-ios', '>= 4.4.1'
+    
+    s.source_files = 'Sources/**/*'
 end
