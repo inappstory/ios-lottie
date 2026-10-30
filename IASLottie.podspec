@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name = 'IASLottie'
-    s.version = '0.2.1'
+    s.version = '0.2.2'
     s.platform = :ios, '13.0'
     s.license  = { :type => 'MIT', :file => 'LICENSE' }
     s.homepage = 'https://github.com/inappstory/ios-lottie'

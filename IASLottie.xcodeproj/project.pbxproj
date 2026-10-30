@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3432A42E43F0606DC3707E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D86B29C7CB317D039A586D21 /* Lottie */; };
 		31A5DE4E2BEB58E00065EFA2 /* IASLottie.h in Headers */ = {isa = PBXBuildFile; fileRef = 31A5DE4D2BEB58E00065EFA2 /* IASLottie.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31A5DE552BEB59A30065EFA2 /* IASLottie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A5DE542BEB59A30065EFA2 /* IASLottie.swift */; };
 		31A5DE5C2BEB5A000065EFA2 /* IASLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A5DE5B2BEB5A000065EFA2 /* IASLottieView.swift */; };
-		E9AF9D41566167F7670C4A39 /* Pods_IASLottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13F041BF0BAF2641DC529B2 /* Pods_IASLottie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,9 +18,6 @@
 		31A5DE4D2BEB58E00065EFA2 /* IASLottie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IASLottie.h; sourceTree = "<group>"; };
 		31A5DE542BEB59A30065EFA2 /* IASLottie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IASLottie.swift; sourceTree = "<group>"; };
 		31A5DE5B2BEB5A000065EFA2 /* IASLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IASLottieView.swift; sourceTree = "<group>"; };
-		330980C059F18F0F11F36FAA /* Pods-IASLottie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IASLottie.debug.xcconfig"; path = "Target Support Files/Pods-IASLottie/Pods-IASLottie.debug.xcconfig"; sourceTree = "<group>"; };
-		77DD8180DDBA31EADDB1187B /* Pods-IASLottie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IASLottie.release.xcconfig"; path = "Target Support Files/Pods-IASLottie/Pods-IASLottie.release.xcconfig"; sourceTree = "<group>"; };
-		D13F041BF0BAF2641DC529B2 /* Pods_IASLottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IASLottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9AF9D41566167F7670C4A39 /* Pods_IASLottie.framework in Frameworks */,
+				0F3432A42E43F0606DC3707E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +37,6 @@
 			children = (
 				31A5DE4C2BEB58E00065EFA2 /* Sources */,
 				31A5DE4B2BEB58E00065EFA2 /* Products */,
-				31A5DE562BEB59CC0065EFA2 /* Frameworks */,
-				C933245ED1E35DEBB6F3C451 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,24 +58,6 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		31A5DE562BEB59CC0065EFA2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D13F041BF0BAF2641DC529B2 /* Pods_IASLottie.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C933245ED1E35DEBB6F3C451 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				330980C059F18F0F11F36FAA /* Pods-IASLottie.debug.xcconfig */,
-				77DD8180DDBA31EADDB1187B /* Pods-IASLottie.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../InAppStorySUI/Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -99,7 +76,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31A5DE512BEB58E00065EFA2 /* Build configuration list for PBXNativeTarget "IASLottie" */;
 			buildPhases = (
-				35DF9C23C10583E8F609E402 /* [CP] Check Pods Manifest.lock */,
 				31A5DE452BEB58E00065EFA2 /* Headers */,
 				31A5DE462BEB58E00065EFA2 /* Sources */,
 				31A5DE472BEB58E00065EFA2 /* Frameworks */,
@@ -110,6 +86,9 @@
 			dependencies = (
 			);
 			name = IASLottie;
+			packageProductDependencies = (
+				D86B29C7CB317D039A586D21 /* Lottie */,
+			);
 			productName = IASLottie;
 			productReference = 31A5DE4A2BEB58E00065EFA2 /* IASLottie.framework */;
 			productType = "com.apple.product-type.framework";
@@ -138,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 31A5DE402BEB58E00065EFA2;
+			packageReferences = (
+				5F41377C8D2ECC4BB5F51716 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = 31A5DE4B2BEB58E00065EFA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -156,31 +138,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		35DF9C23C10583E8F609E402 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IASLottie-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31A5DE462BEB58E00065EFA2 /* Sources */ = {
@@ -229,7 +186,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 90;
+				CURRENT_PROJECT_VERSION = 91;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -250,7 +207,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 0.2.1;
+				MARKETING_VERSION = 0.2.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -296,7 +253,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 90;
+				CURRENT_PROJECT_VERSION = 91;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -311,7 +268,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 0.2.1;
+				MARKETING_VERSION = 0.2.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -324,13 +281,12 @@
 		};
 		31A5DE522BEB58E00065EFA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 330980C059F18F0F11F36FAA /* Pods-IASLottie.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 90;
+				CURRENT_PROJECT_VERSION = 91;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MLV6NFSTQU;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -346,7 +302,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.1;
+				MARKETING_VERSION = 0.2.2;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.inappstory.IASLottie;
@@ -366,13 +322,12 @@
 		};
 		31A5DE532BEB58E00065EFA2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77DD8180DDBA31EADDB1187B /* Pods-IASLottie.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 90;
+				CURRENT_PROJECT_VERSION = 91;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MLV6NFSTQU;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -388,7 +343,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.1;
+				MARKETING_VERSION = 0.2.2;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.inappstory.IASLottie;
@@ -427,6 +382,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F41377C8D2ECC4BB5F51716 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D86B29C7CB317D039A586D21 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F41377C8D2ECC4BB5F51716 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 31A5DE412BEB58E00065EFA2 /* Project object */;
 }

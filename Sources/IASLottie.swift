@@ -15,8 +15,8 @@ public var IASLottieVersion: String {
 }
 
 public class IASLottie: NSObject {
-    public static let VersionSDK: String = "0.2.1"
-    public static let BuildSDK: String = "90"
+    public static let VersionSDK: String = "0.2.2"
+    public static let BuildSDK: String = "91"
     
     @objc public class func getLottieViewWith(_ path: String, complete: @escaping AnimationLoadedHandler) -> UIView {
         let fileURL = URL(fileURLWithPath: path)
